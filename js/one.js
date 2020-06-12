@@ -587,7 +587,7 @@ $(contact).click(function(){
 	var avatar = document.getElementsByClassName('avatar')[0];
 	// avatar.style.transition="5s";
 	// $(avatar).animate({ avatar.setAttribute("src", "avatar3.png") }, 2000);
-	avatar.setAttribute("src", "avatar3.png");
+	avatar.setAttribute("src", "img/avatar3.png");
 });
 
 
@@ -619,7 +619,7 @@ $(contact_close).click(function(){
 	body_exception.css("pointerEvents","all");
 
 	var avatar = document.getElementsByClassName('avatar')[0];
-	avatar.setAttribute("src", "avatar1.png");
+	avatar.setAttribute("src", "img/avatar1.png");
 	// body_exception.css("content","");
 	// alert("one");
 });
