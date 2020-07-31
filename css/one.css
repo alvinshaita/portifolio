@@ -500,6 +500,8 @@ h1{
 	padding-right: 12%;
 	/*display: block;*/
 	/*margin-right: 50px;*/
+
+	padding-bottom: 100px;
 }
 
 .project_main{
@@ -554,6 +556,65 @@ h1{
 	border: 1px solid #9fa6ad;
 }
 
+
+
+.source_code{
+	/*background-color: white;*/
+
+
+
+	/*background-color: #e5e5e5;*/
+	/*color: #2f3337;*/
+
+
+
+
+	background-color: #242729;
+	/*color: white;*/
+	color: #e5e5e5;
+
+
+	border: 1px solid #9fa6ad;
+	/*border: 1px solid #242729;*/
+
+
+
+
+	/*position: absolute;*/
+	right: 200px;
+
+	font-size: 14px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	float: right;
+
+	text-decoration: none;
+
+	border-radius: 4px;
+	transition: .3s;
+
+}
+
+
+.source_code:hover{
+	cursor: pointer;
+	/*transition: .4s;*/
+
+	/*color: #ff5851;*/
+	/*transition: .4s;*/
+	/*border: 1px solid #ff5851;*/
+	/*background-color: #e5e5e5;*/
+
+	/*background-color: #ff5851;*/
+	background-color: #e5e5e5;
+
+	color: #242729;
+	/*color: #fff;*/
+}
+
 .projects{
 	margin-top: 20px;
 }
@@ -570,6 +631,11 @@ h1{
 	transition: .4s;
 	/*margin-bottom: 50px;*/
 }
+
+
+
+
+
 
 /*.project_tag{
 		background-color: red;
@@ -671,6 +737,25 @@ footer{
 	/*animation-duration: 2s;*/
 	background-color: #ff5851;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 800px) {
   .skills_inner{
@@ -865,7 +950,58 @@ footer{
   	padding-top: 20px;
   	padding-bottom: 20px;
   }
+
+  .gh_pages img{
+  	width: 100%;
+  }
+
+  .source_code{
+  	display: inline-block;
+  	margin-top: 5px;
+  	padding-top: 7px;
+  	padding-bottom: 7px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	font-size: 12px;
+  }
+
+  .portfolio_more{
+  	color: red;
+  }
+
+  .more{
+  	/*color: red !important;*/
+  	font-size: 12px !important;
+  	padding-top: 10px !important;
+  	padding-bottom: 10px !important;
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fa{
 	text-decoration: none;
@@ -878,3 +1014,105 @@ footer{
 	text-decoration: none;
 	color: #bdbdbd;
 }
+
+.gh_pages{
+	/*border-radius: 100%;*/
+	text-align: center;
+}
+
+.gh_pages img{
+	/*margin: 5px 10px;*/
+
+	margin: 5px 2px;
+
+	/*margin-top: 10px;*/
+	/*margin-bottom: 10px;*/
+
+	/*padding-top: 10px;*/
+
+	border-radius: 7px;
+	/*border: 1px solid red;*/
+	border: 2px solid #e5e5e5;
+
+	transition: .4s;
+}
+
+
+.gh_pages img:hover{
+	border: 2px solid #ff5851;
+}
+
+
+.more{
+	/*background-color: white;*/
+
+
+	/*width: 30%;*/
+
+
+
+	/*background-color: #e5e5e5;*/
+	/*color: #2f3337;*/
+
+
+
+
+
+
+	background-color: #242729;
+	color: #e5e5e5;
+	border: 1px solid #9fa6ad;
+
+
+
+	/*background-color: #242729;*/
+	/*color: white;*/
+	/*border: 1px solid #9fa6ad;*/
+
+
+
+
+	/*position: absolute;*/
+	/*right: 200px;*/
+
+	font-size: 14px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	/*float: right;*/
+	text-align: center;
+
+	text-decoration: none;
+
+	border-radius: 4px;
+	transition: .3s;
+
+}
+
+
+.more:hover{
+	cursor: pointer;
+	/*transition: .4s;*/
+
+	/*color: #ff5851;*/
+	/*transition: .4s;*/
+	/*border: 1px solid #ff5851;*/
+	/*background-color: #e5e5e5;*/
+
+	/*background-color: #ff5851;*/
+	background-color: #e5e5e5;
+
+	color: #242729;
+
+	/*color: #ff5851;*/
+
+	/*color: #fff;*/
+}
+
+.portfolio_more{
+	text-align: center;
+	margin-top: 30px;
+}
+
