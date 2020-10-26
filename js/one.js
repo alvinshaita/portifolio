@@ -29,8 +29,9 @@
 
 
 function animate_skills(){
-	var scrollFromTop = $(".skills_outer").offset().top;
-	if ($(document).scrollTop() + window.innerHeight  > scrollFromTop){
+// 	var scrollFromTop = $(".skills_outer").offset().top;
+// 	if ($(document).scrollTop() + window.innerHeight  > scrollFromTop)
+	{
 			// alert('scrollFromTop');
 		// if($(document).scrollTop()>385){
 		var skill = document.getElementsByClassName("skill");
@@ -255,7 +256,7 @@ $(".project_image").hover(function(){
 
 // skills_inner
 // animate_skills();
-setInterval(() => {  animate_skills() }, 0);
+// setInterval(() => {  animate_skills() }, 0);
 
 
 // animate_skills();
@@ -424,10 +425,14 @@ if ($(window).width() > 1000){
 		// setTimeout(() => {  animate_skills() }, 1000);
 		// animate_skills();
 		// highlight_portifolio();
-		setInterval(() => {  animate_skills() }, 0);
+// 		setInterval(() => {  animate_skills() }, 0);
+		
+		animate_skills();
 
 	};
 
+}else{
+	animate_skills();
 }
 
 
