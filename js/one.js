@@ -291,7 +291,7 @@ setInterval(() => {  animate_skills() }, 0);
 
 // var goup_state = 0;
 
-if ($(window).width() > 800){
+if ($(window).width() > 1000){
 	var top_animation = 0;
 
 	var my_contact = document.getElementsByClassName("contact")[0];
