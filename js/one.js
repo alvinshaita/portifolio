@@ -80,6 +80,30 @@ function animate_skills(){
 
 
 
+function animate_skills_less(){
+// 	var scrollFromTop = $(".skills_outer").offset().top;
+// 	if ($(document).scrollTop() + window.innerHeight  > scrollFromTop)
+	{
+		var skill = document.getElementsByClassName("skill");
+		var time = 2000;
+		for (i = 0; i < skill.length; i++) {
+			var skill_level_inner = skill[i].getElementsByClassName("skill_level_inner")[0];
+			var skill_level = document.getElementsByClassName("skill_level")[0];
+			var skill_percent = skill[i].getElementsByClassName("skill_percent")[0];
+			var skill_level_value = skill_level_inner.getAttribute("value");
+// 			$(skill_level_inner).animate({ width:skill_level_value }, time);
+			$(skill_level_inner).animate({ width:skill_level_value }, 0);
+			skill_percent.textContent = Math.round((skill_level_inner.offsetWidth-parseInt($(skill_level_inner).css("border-right-width").replace('px','')))/skill_level.offsetWidth*100)+"%";
+			time+=100;
+		}
+	}
+}
+
+
+
+
+
+
 
 
 
@@ -425,14 +449,14 @@ if ($(window).width() > 1000){
 		// setTimeout(() => {  animate_skills() }, 1000);
 		// animate_skills();
 		// highlight_portifolio();
-// 		setInterval(() => {  animate_skills() }, 0);
+		setInterval(() => {  animate_skills() }, 0);
 		
-		animate_skills();
+// 		animate_skills();
 
 	};
 
 }else{
-	animate_skills();
+	animate_skills_less();
 }
 
 
